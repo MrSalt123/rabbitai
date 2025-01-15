@@ -1,0 +1,20 @@
+.hole {
+    position: absolute;
+    top: 63%;
+    /* Adjust this value to move the hole higher */
+    left: 37%;
+    /* Center the hole horizontally */
+    transform: translateX(-50%);
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.blinking-cursor {
+    display: inline-block;
+    width: 8px;
+    background-color: white;
+    animation: blink 1s step-start infinite;
+}
