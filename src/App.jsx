@@ -25,7 +25,7 @@ function App() {
     <div className="font-cascadia text-xs text-white bg-black h-screen flex">
       {!showTerminal ? (
         <div className='w-screen items-center justify-center'>
-          <div className='flex flex-col items-center justify-center text-center h-1/5'>
+          <div className='flex flex-col items-center justify-center text-center h-1/4'>
             {/* Static content */}
             <Typewriter text="Yoou have stumbled upon the rabbit hole — a place where questions outnumber answers, and truths are hidden beneath layers of illusion. Will you venture deeper to uncover what lies beyond? Click on the rabbit to start." />
           </div>
