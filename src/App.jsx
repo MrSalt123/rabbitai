@@ -85,7 +85,7 @@ function Terminal() {
   };
 
   const handleCommand = async (command) => {
-    if (command.startsWith('ask ')) {
+    if (command.toLowerCase().startsWith('ask ')) {
       const query = command.slice(4).trim();
       if (query) {
         return await fetchOpenAIResponse(query);
