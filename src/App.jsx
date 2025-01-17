@@ -31,6 +31,7 @@ function App() {
               className="inset-0 w-3/4 h-auto object-cover"
               muted
               playsInline
+              preload="auto"
               style={{ display: showTerminal ? 'none' : 'block' }}
               onClick={handleDive}
             ></video>
