@@ -90,14 +90,14 @@ function Terminal() {
       if (query) {
         return await fetchOpenAIResponse(query);
       }
-    } else if (command === '/help') {
+    } else if (command.toLowerCase() === '/help') {
       return 'Help Guide:\n  /help      Show this help guide\n  cls         Clear the screen\n  about       Display information about RabbitAI\n  ask [text]  Ask the AI a question\n  ca          Official contract address of RabbitAI token';
-    } else if (command === 'cls') {
+    } else if (command.toLowerCase() === 'cls') {
       setCommands([]);
       return '';
-    } else if (command === 'about') {
+    } else if (command.toLowerCase() === 'about') {
       return 'RabbitAI Terminal - Created by Conspirator Corporation';
-    } else if (command === 'ca') {
+    } else if (command.toLowerCase() === 'ca') {
       return 'F5UJz1eoyDu4S8Dswz8WsYjiw4GAyY3UZia3avzmpump';
     } else {
       return `'${command}' is not recognized as an internal or external command.`;
