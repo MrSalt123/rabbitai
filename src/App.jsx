@@ -91,7 +91,7 @@ function Terminal() {
         return await fetchOpenAIResponse(query);
       }
     } else if (command === '/help') {
-      return 'Help Guide:\n  /help      Show this help guide\n  cls         Clear the screen\n  about       Display information about RabbitAI\n  ask [text]  Ask the AI a question\n  ca          official contract address of RabbitAI token';
+      return 'Help Guide:\n  /help      Show this help guide\n  cls         Clear the screen\n  about       Display information about RabbitAI\n  ask [text]  Ask the AI a question\n  ca          Official contract address of RabbitAI token';
     } else if (command === 'cls') {
       setCommands([]);
       return '';
