@@ -6,6 +6,12 @@ function App() {
   const [showTerminal, setShowTerminal] = useState(false);
   const videoRef = useRef(null);
 
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  }, []);
+
   // Handles the "Dive In" button click
   const handleDive = () => {
     if (videoRef.current) {
