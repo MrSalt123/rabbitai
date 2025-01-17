@@ -90,8 +90,8 @@ function Terminal() {
       if (query) {
         return await fetchOpenAIResponse(query);
       }
-    } else if (command === '--help') {
-      return 'Help Guide:\n  --help      Show this help guide\n  cls         Clear the screen\n  about       Display information about RabbitAI\n  ask [text]  Ask the AI a question';
+    } else if (command === '/help') {
+      return 'Help Guide:\n  /help      Show this help guide\n  cls         Clear the screen\n  about       Display information about RabbitAI\n  ask [text]  Ask the AI a question';
     } else if (command === 'cls') {
       setCommands([]);
       return '';
@@ -149,7 +149,8 @@ function Terminal() {
       <p>RabbitAI Terminal</p>
       <p>Copyright (C) Conspirator Corporation. All rights reserved</p>
       <br />
-      <p>Use --help for a help guide.</p>
+      <p>Use /help for a help guide.</p>
+      <p>Use ask [input] to prompt the AI</p>
       <p>Begin your dive into the rabbit hole...</p>
       <br />
 
