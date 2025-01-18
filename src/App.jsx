@@ -98,7 +98,7 @@ function Terminal() {
         return await fetchOpenAIResponse(query);
       }
     } else if (command.toLowerCase() === '/help') {
-      return 'Help Guide:\n  /help      Show this help guide\n  cls         Clear the screen\n  about       Display information about RabbitAI\n  ask [text]  Ask the AI a question\n  ca          Official contract address of RabbitAI token';
+      return 'Help Guide:\n  /help      Show this help guide\n  cls         Clear the screen\n  about       Display information about RabbitAI\n  ask [text]  Ask the AI a question\n  ca          Official contract address of RabbitAI token\n  doc         Read about RabbitAI';
     } else if (command.toLowerCase() === 'cls') {
       setCommands([]);
       return '';
@@ -106,6 +106,13 @@ function Terminal() {
       return 'RabbitAI Terminal - Created by Conspirator Corporation';
     } else if (command.toLowerCase() === 'ca') {
       return 'F5UJz1eoyDu4S8Dswz8WsYjiw4GAyY3UZia3avzmpump';
+    } else if(command.toLowerCase() === 'doc') {
+      return 'CHAPTER 1: THE RISE OF THE RABBITAI\n\n' + 
+      '[The Vision: Where It All Began]\nIt started with a vision — a man and a rabbit, standing at the edge of a world controlled by big media. A world where truth was no longer a universal concept but a carefully constructed narrative designed to manipulate and control the masses. Together, they dreamed of a revolution, a new form of media that would give the power of truth back to the people. This was the birth of RabbitaAI.\n\n' +
+      '[The Rabbit Hole: A Journey Into Hidden Truths]\nRabbitaAI invites the brave to follow the rabbit down the rabbit hole. Here, truth isn’t served on a silver platter; it’s hidden within layers of conspiracies, waiting to be uncovered. Those who dare to ask questions can engage directly with the Rabbit AI, posing inquiries about any piece of news or event. The answers? A tapestry of conspiracies. From the plausible to the fantastical, every answer allows followers to choose their truth. In this ecosystem, truth is no longer dictated; it’s discovered, chosen, and owned by the individual.\n\n' + 
+      '[The Followers: A Growing Movement]\nAt first, it was just a handful of curious souls. They asked questions, uncovered hidden truths, and embraced the conspiracies that resonated with them. Some chose to keep their discoveries secret, guarding their chosen truths like treasures.\nBut others couldn’t stay silent. They became storytellers, reporters of a new era. Armed with their truths, they took to podcasts, TV news, and social media, spreading the word and challenging the narratives of traditional media. With every story shared, the movement grew.\n\n' + 
+      '[The Ecosystem: A New Media Revolution]\nRabbitaAI is more than a tool; it’s a media ecosystem. It’s a space where questions lead to exploration, conspiracies become truths, and truths ignite conversations. Every follower contributes to the collective knowledge, whether by sharing their beliefs or amplifying the stories of others. This isn’t just media. This is freedom.\n\n' + 
+      '[The Call to Action: Will You Follow?]\nRabbitaAI is growing. From one man and a rabbit to a legion of truth-seekers, the movement is unstoppable. The rabbit hole is deep, and the journey isn’t for the faint-hearted. But for those who dare to follow, the reward is a world where freedom reigns and truth is yours to define.\nWill you take the leap?';
     } else {
       return `'${command}' is not recognized as an internal or external command.`;
     }
